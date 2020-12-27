@@ -1,0 +1,29 @@
+nav{
+    float: right;
+    display: flex;
+    padding: 30px;
+}
+ul{
+    float: right;
+    right: 0;
+    display: flex;
+    list-style-type: none;
+    overflow: hidden;
+}
+li{
+    margin: 5px;
+}
+
+.mainDiv{
+    background-color: #163a67;
+    padding: 20px;
+}
+
+.introPar{
+    color: aliceblue;
+}
+.imgContainer{
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+}
