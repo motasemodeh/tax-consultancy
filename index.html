@@ -3,65 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tax Consultancy Services - Amman</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Class 1 Lab</title>
+<style>
+.title{
+    color: white;
+    background-color: black;
+}
+nav{
+    float: right;
+    display: flex;
+    padding: 30px;
+}
+ul{
+    float: right;
+    right: 0;
+    display: flex;
+    list-style-type: none;
+    overflow: hidden;
+}
+li{
+    margin: 5px;
+}
+
+.copyright
+{
+    text-align: center;
+    padding-top: 30px;
+}
+
+.credits
+{
+    text-align: center;
+    font-size: 13px;
+    color: #555;
+}
+
+#footer
+{
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height: 73px;
+   width:100%;
+   background:#999;
+}
+
+</style>
 </head>
 <body>
+<header>
+    <img class="" style=" padding: 30px;" src="https://electursys.info/wp-content/uploads/2019/09/placeholder.com-logo1.png" width="200px" height="50px" alt="">
+    <nav>
+        <ul>
+            <li><a>Home</a></li>
+            <li><a>About us</a> </li>
+            <li><a>Contact us</a> </li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <h1 class="title">Class 1 Lab</h1>
+<p style="color:red; background-color:blue">What's your name?</p>
+<p style="color:black; background-color:yellow">How old Are you</p>
+<p style="color:white; background-color:black">Where are you from?</p>
+<p style="color:yellow; background-color:red">What's your Major in college?</p>
 
-    <header style="margin-bottom:30px;">
-
-        <img style=" padding: 30px;" src="M&B.png" width="200px" height="50px" alt="">
-
-        <nav>
-            
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="aboutus.html">About Us</a></li>
-                <li><a href="contactus.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-
-        <div class="mainDiv">
-
-
-            <p class="introPar">We are pioneers in providing various
-                <br>consultations and services in all
-                <br>fields with a team of experts and consultants on a local,
-                <br>regional, and global scale.
-                <br>Our goal is the success of our customers in all respects.
-            </p>
-
-                <div class="imgContainer">
-                    <img  src="Taxation-Services.jpg" alt="">
-                </div>
-                <p>
-                    <a style="color: white;" href="https://bishernob.github.io/Taxwebpage/">Visit Irbid Branch</a>
-                </p>
-
-
-
-                <p style="font-size: 20px; color: rgb(255, 0, 0); font-weight: bold;">
- 
-                
-                </p>  
-                <br>
-
-                <button onclick="myFunction()">color me</button>
-
-                <p id="demo"></p>
-                
-                <script src="app.js">
-                 
-                </script>
-
+</main>
+<footer id="footer">
+        <div class="copyright">
+          © Copyright <strong>Motasem Odeh</strong>. All Rights Reserved
         </div>
-
-    </main>
-    <footer style="padding: 30px; text-align: center;">
-        Copy Right 2020
-    </footer>
-
+        <div class="credits">
+          Designed by <a href="https://motasemodeh.com/">Motasem Odeh</a>
+</footer>
+    <script>
+        var myName = prompt('What\'s your name?');
+        var myAge = prompt('How old Are you');
+        var myNatinality = prompt('Where are you from?');
+        var myMajor = prompt('What\'s your Major in college?');
+        alert('Hello, my name\'s ' + myName + ' and I\'m ' + myAge + 'Years Old ' + 'and I\'m from ' + myNatinality + ' I have bachelor\'s degree in ' + myMajor);
+        console.log(myName);
+        console.log(myAge);
+        console.log(myNatinality);
+        console.log(myMajor);
+        // document.write('<p style="color:red; background-color:blue">'+myName+'</p>');
+        // document.write('<p style="color:black; background-color:yellow">'+myAge+'</p>');
+        // document.write('<p style="color:white; background-color:black">'+myNatinality+'</p>');
+        // document.write('<p style="color:yellow; background-color:red">'+myMajor+'</p>');
+    </script>
 </body>
 </html>
